@@ -24,19 +24,24 @@ rjw-idd-methodology/
 ├── operations/              # Execution playbooks
 │   ├── METHOD-0004-ai-agent-workflows.md
 │   └── METHOD-0005-operations-production-support.md
-├── templates/               # Artifact templates
-│   └── PROJECT-DEC-template.md
+├── templates/               # Artifact templates (organised by category)
+│   ├── decisions/           # Decision record templates
+│   ├── requirements/        # Requirement templates
+│   ├── specs/               # Specification templates
+│   ├── evidence/            # Research evidence templates
+│   ├── testing/             # Test case templates
+│   ├── documentation/       # Standards, runbooks, guides
+│   └── governance/          # Change logs, audit logs, ledgers
 ├── addons/                  # Domain-specific methodology extensions
 │   ├── 3d-game-core/
 │   └── video-ai-enhancer/
-└── docs/                    # Method-level documentation
-    ├── change-log.md
-    └── decisions/
+├── docs/                    # Method-level documentation
+│   ├── change-log.md
+│   └── decisions/
+└── logs/                    # Stage audit reflections
 
 docs/                        # Reference documentation
-├── governance.md
-├── runbooks/
-└── decisions/
+└── README.md
 ```
 
 ## Core Methodology Components
@@ -83,17 +88,30 @@ Guidance for post-deployment phases including:
 
 Copy these templates into your project when applying RJW-IDD:
 
-| Template | Purpose |
-|----------|---------|
-| `rjw-idd-methodology/templates/PROJECT-DEC-template.md` | Decision record capturing options, trade-offs, and outcomes |
+| Category | Template | Purpose |
+|----------|----------|---------|
+| **Decisions** | `templates/decisions/DEC-template.md` | Capture strategic choices with options and rationale |
+| **Requirements** | `templates/requirements/REQ-template.md` | Define system requirements with acceptance criteria |
+| **Specifications** | `templates/specs/SPEC-template.md` | Technical design addressing requirements |
+| **Evidence** | `templates/evidence/EVD-template.md` | Research findings supporting decisions |
+| **Testing** | `templates/testing/TEST-template.md` | Verify specifications meet acceptance criteria |
+| **Documentation** | `templates/documentation/DOC-template.md` | Standards, runbooks, guides, and references |
+| **Governance** | `templates/governance/CHANGE-LOG-template.md` | Track methodology/project changes |
+| **Governance** | `templates/governance/STAGE-AUDIT-LOG-template.md` | Phase gate audit reflections |
+| **Governance** | `templates/governance/REQ-LEDGER-template.md` | Requirement traceability matrix |
+| **Governance** | `templates/governance/LIVING-DOCS-RECONCILIATION-template.md` | Documentation debt tracking |
+
+See `rjw-idd-methodology/templates/README.md` for detailed usage instructions.
 
 ## Using This Methodology
 
 1. **Study the core method** — Read `rjw-idd-methodology/core/METHOD-0001-core-method.md` to understand the lifecycle
-2. **Copy templates** — Clone templates into your project workspace; never modify the originals
+2. **Copy templates** — Clone templates from `rjw-idd-methodology/templates/` into your project workspace; never modify the originals
 3. **Apply the checklists** — Use `METHOD-0002` to guide each phase transition
 4. **Assign roles** — Follow `METHOD-0003` to establish ownership
-5. **Document decisions** — Create `DEC-####` records using the template for every strategic choice
+5. **Document decisions** — Create `DEC-####` records using the decision template for every strategic choice
+6. **Track requirements** — Use the requirement ledger template to maintain traceability
+7. **Maintain governance** — Update change logs and audit logs at each phase gate
 
 ## Addons (Domain Extensions)
 
