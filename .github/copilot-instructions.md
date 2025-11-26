@@ -33,6 +33,7 @@ This repository contains the **RJW-IDD Methodology** in its pure form — docume
 ### What NOT to Add
 
 This is a methodology-only repository:
+
 - No code (Python, shell scripts, etc.)
 - No implementation tools
 - No CI/CD pipelines for code testing

@@ -19,15 +19,19 @@ Describe the change and why it is needed.
 ## Impacted Artifacts
 
 **Method Documents:**
+
 - METHOD-####: Description
 
 **Templates:**
+
 - Template name: Description
 
 **Addons:**
+
 - Addon name: Description
 
 **Decisions:**
+
 - DEC-####: Description
 
 ## Related Issues/PRs
