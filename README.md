@@ -1,111 +1,66 @@
 # Rolaand Jayz Wayz – Coding with Natural Language: Intelligence Driven Development (RJW-IDD)
 
-> **A disciplined methodology for AI-assisted software development** — no code, just the pure method and templates for the artifacts you create when applying it.
+> **A disciplined methodology for AI-assisted software development** — no code, just the pure method and templates for the artefacts you create when applying it.
 
-## What is RJW-IDD?
+## 🗺️ Start Here
 
-RJW-IDD (Intelligence Driven Development) is a methodology that replaces vibe-driven AI coding with a disciplined loop where **reality** (fresh research, explicit trade-offs) leads specification and implementation. It provides:
+Welcome. If you are new to RJW-IDD, follow this path:
 
-- **Traceable decisions** captured in individual Markdown records
-- **Research-first development** with curated evidence driving requirements
-- **Specification-driven design** before implementation begins
-- **Test-driven execution** with living documentation
+1.  **Understand the "Why":** Read [**WHY-RJW-IDD.md**](./WHY-RJW-IDD.md) to understand why "vibe coding" fails and how this method fixes it.
+2.  **Explore the Method:**
+    *   **Core Principles:** [METHOD-0001](./rjw-idd-methodology/core/METHOD-0001-principles.md)
+    *   **Streamlined Operations:** [METHOD-0007](./rjw-idd-methodology/operations/METHOD-0007-streamlined-operations.md) (How to get work done fast)
+    *   **Agent Trust:** [METHOD-0006](./rjw-idd-methodology/operations/METHOD-0006-agent-trust-and-autonomy.md) (How to work with AI agents)
+3.  **Use the Templates:** When you do work, copy the templates from [`rjw-idd-methodology/templates/`](./rjw-idd-methodology/templates/).
 
-## Repository Structure
+---
 
-This repository contains the **pure methodology** and **templates** only — no implementation code.
+## 📂 Repository Map
 
-```text
-rjw-idd-methodology/
-├── core/                    # Core method principles (METHOD-0001)
-├── governance/              # Phase checklists and role handbooks
-│   ├── METHOD-0002-phase-driver-checklists.md
-│   └── METHOD-0003-role-handbook.md
-├── operations/              # Execution playbooks
-│   ├── METHOD-0004-ai-agent-workflows.md
-│   └── METHOD-0005-operations-production-support.md
-├── templates/               # Artifact templates
-│   └── PROJECT-DEC-template.md
-├── addons/                  # Domain-specific methodology extensions
-│   ├── 3d-game-core/
-│   └── video-ai-enhancer/
-└── docs/                    # Method-level documentation
-    ├── change-log.md
-    └── decisions/
+### Core Documents (`rjw-idd-methodology/`)
 
-docs/                        # Reference documentation
-├── governance.md
-├── runbooks/
-└── decisions/
-```
+*   **`core/`**: The fundamental laws of the method.
+    *   `METHOD-0001`: Principles.
+    *   `METHOD-0002`: The detailed "Checklists" for high-risk work.
+    *   `METHOD-0003`: Roles & Responsibilities.
+*   **`operations/`**: How to execute.
+    *   `METHOD-0004`: AI Agent Workflows.
+    *   `METHOD-0005`: Production Support.
+    *   `METHOD-0006`: **Agent Trust & Autonomy** (NEW).
+    *   `METHOD-0007`: **Streamlined Operations** (NEW).
+*   **`templates/`**: **Copy these to start working.**
+    *   `TECH-CONTEXT-template.md`: **Crucial.** The living brain of your tech stack.
+    *   `DEC-LITE-template.md`: For most day-to-day decisions.
+    *   `PROJECT-DEC-template.md`: For big architectural choices.
+    *   `AGENT-TRUST-template.md`: To promote/demote AI agents.
 
-## Core Methodology Components
+### Documentation (`docs/`)
+*   `change-log.md`: The history of this methodology itself.
 
-### 1. Core Method (`METHOD-0001`)
+---
 
-The foundational document describing:
+## 🚀 Quick Start Guide
 
-- **Discovery Layer** — Research intake, evidence curation, and specification synthesis
-- **Execution Layer** — Test-driven development, living documentation, integration-first delivery
-- **Stage Gates** — Checkpoints ensuring each phase completes before the next begins
+### 1. Setup Your Project
+Copy the `rjw-idd-methodology` folder into your project root.
 
-### 2. Phase-Driver Checklists (`METHOD-0002`)
+### 2. Initialize Context
+Create `docs/TECH-CONTEXT.md` using the [template](./rjw-idd-methodology/templates/TECH-CONTEXT-template.md). Fill in your current stack.
 
-Gate-by-gate tasks for:
+### 3. Choose Your Path (from METHOD-0007)
 
-- Discovery Intake
-- Discovery → Execution transition
-- Execution → Release
+*   **Small Fix?** → **Pathway B (Low Risk)**
+    *   Check `TECH-CONTEXT.md`.
+    *   Write a failing test.
+    *   Fix it.
+    *   Update Change Log.
+*   **New Feature?** → **Pathway C (High Risk)**
+    *   Create a `DEC-####` decision record.
+    *   Write a `SPEC-####`.
+    *   Update `TECH-CONTEXT.md` if adding libs.
+    *   Implement & Verify.
 
-### 3. Role Handbook (`METHOD-0003`)
+---
 
-Responsibilities for:
-
-- Agent Conductor
-- Spec Curator
-- Doc Steward
-- Governance Sentinel
-
-### 4. AI Agent Workflows (`METHOD-0004`)
-
-Playbooks for coordinating AI coding agents within the methodology.
-
-### 5. Operations & Production Support (`METHOD-0005`)
-
-Guidance for post-deployment phases including:
-
-- Deployment strategies (blue-green, canary)
-- SLO management
-- Incident response
-- User feedback collection
-
-## Templates
-
-Copy these templates into your project when applying RJW-IDD:
-
-| Template | Purpose |
-|----------|---------|
-| `rjw-idd-methodology/templates/PROJECT-DEC-template.md` | Decision record capturing options, trade-offs, and outcomes |
-
-## Using This Methodology
-
-1. **Study the core method** — Read `rjw-idd-methodology/core/METHOD-0001-core-method.md` to understand the lifecycle
-2. **Copy templates** — Clone templates into your project workspace; never modify the originals
-3. **Apply the checklists** — Use `METHOD-0002` to guide each phase transition
-4. **Assign roles** — Follow `METHOD-0003` to establish ownership
-5. **Document decisions** — Create `DEC-####` records using the template for every strategic choice
-
-## Addons (Domain Extensions)
-
-The methodology includes optional extensions for specific domains:
-
-- **3D Game Core** — Specs and checklists for game development with Unity, Unreal, Godot
-- **Video AI Enhancer** — Quality gates for real-time video enhancement pipelines
-
-## Contributing
-
-Methodology changes require a new decision record (`DEC-####`) justifying the modification. See `CONTRIBUTING.md` for details.
-
-## License
-
-See `LICENSE` for terms.
+## 🤝 Contributing
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for how to propose changes to this methodology.
