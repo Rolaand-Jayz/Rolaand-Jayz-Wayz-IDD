@@ -11,3 +11,5 @@ Thumbs.db
 
 # Node.js (for markdownlint)
 node_modules/
+package.json
+package-lock.json
