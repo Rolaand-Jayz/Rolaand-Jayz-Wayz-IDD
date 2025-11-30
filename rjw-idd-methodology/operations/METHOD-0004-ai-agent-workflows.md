@@ -2,7 +2,7 @@
 
 This playbook turns the RJW-IDD method pack into concrete steps for teams working with AI coding agents. Follow it to reproduce the evidence → spec → implementation loop captured in the scaffold.
 
-> **Quick Start:** Classify your change risk level using [METHOD-0002 Quick Start](#streamlined-workflow-selection) before proceeding. Low-risk changes can skip directly to [Streamlined Pathways](#streamlined-pathways).
+> **Quick Start:** Classify your change risk level using the [Streamlined Workflow Selection](#streamlined-workflow-selection) table before proceeding. Low-risk changes can skip directly to [Streamlined Pathways](#streamlined-pathways).
 
 ## 0. Assign Roles and Trust Levels
 
