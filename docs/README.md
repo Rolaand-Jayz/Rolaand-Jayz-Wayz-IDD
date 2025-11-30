@@ -13,6 +13,9 @@ See `rjw-idd-methodology/` for:
 - **Role Handbook** — `governance/METHOD-0003-role-handbook.md`
 - **AI Agent Workflows** — `operations/METHOD-0004-ai-agent-workflows.md`
 - **Operations Support** — `operations/METHOD-0005-operations-production-support.md`
+- **Agent Trust Framework** — `operations/METHOD-0006-agent-trust-and-autonomy.md`
+- **Streamlined Operations** — `operations/METHOD-0007-streamlined-operations.md`
+- **Prototype Pathway** — `governance/METHOD-0008-prototype-pathway.md`
 
 ### Templates
 

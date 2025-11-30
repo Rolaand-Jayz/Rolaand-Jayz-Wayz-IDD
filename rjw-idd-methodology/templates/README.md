@@ -18,11 +18,14 @@ templates/
 │   └── TEST-template.md    # Test case definition
 ├── documentation/          # Documentation templates
 │   └── DOC-template.md     # Standards, runbooks, guides
-└── governance/             # Governance templates
-    ├── CHANGE-LOG-template.md              # Change tracking
-    ├── STAGE-AUDIT-LOG-template.md         # Phase audit reflections
-    ├── REQ-LEDGER-template.md              # Requirement traceability
-    └── LIVING-DOCS-RECONCILIATION-template.md  # Documentation gap tracking
+├── governance/             # Governance templates
+│   ├── CHANGE-LOG-template.md              # Change tracking
+│   ├── STAGE-AUDIT-LOG-template.md         # Phase audit reflections
+│   ├── REQ-LEDGER-template.md              # Requirement traceability
+│   └── LIVING-DOCS-RECONCILIATION-template.md  # Documentation gap tracking
+├── PROTO-template.md       # Prototype record (POC/spike)
+├── DEC-LITE-template.md    # Lightweight decision (Low/Medium risk)
+└── AGENT-TRUST-template.md # Agent trust level changes
 ```
 
 ## Template Categories
@@ -71,6 +74,12 @@ templates/
 | `STAGE-AUDIT-LOG-template.md` | Phase gate audit reflections | `logs/LOG-####-stage-audits.md` |
 | `REQ-LEDGER-template.md` | Requirement traceability matrix | `artifacts/ledgers/requirement-ledger.md` |
 | `LIVING-DOCS-RECONCILIATION-template.md` | Documentation debt tracking | `docs/living-docs-reconciliation.md` |
+
+### Prototypes (Root Level)
+
+| Template | Purpose | Identifier Pattern |
+|----------|---------|-------------------|
+| `PROTO-template.md` | Rapid POC/spike documentation with Keep/Flex/Unknown tagging | `PROTO-####` |
 
 ## How to Use
 
@@ -135,3 +144,5 @@ These extend the base templates with domain-specific sections and acceptance cri
 - Phase Checklists: `governance/METHOD-0002-phase-driver-checklists.md`
 - Role Handbook: `governance/METHOD-0003-role-handbook.md`
 - AI Agent Workflows: `operations/METHOD-0004-ai-agent-workflows.md`
+- Agent Trust Framework: `operations/METHOD-0006-agent-trust-and-autonomy.md`
+- Prototype Pathway: `governance/METHOD-0008-prototype-pathway.md`

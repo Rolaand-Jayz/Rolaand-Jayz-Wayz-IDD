@@ -3,6 +3,8 @@
 This playbook turns the RJW-IDD method pack into concrete steps for teams working with AI coding agents. Follow it to reproduce the evidence → spec → implementation loop captured in the scaffold.
 
 > **Quick Start:** Classify your change risk level using the [Streamlined Workflow Selection](#streamlined-workflow-selection) table before proceeding. Low-risk changes can skip directly to [Streamlined Pathways](#streamlined-pathways).
+>
+> **Prototype Work?** For POC, spike, or experimental work, use the [Prototype Mode](#8-prototype-mode-for-ai-agents) section below. This enables rapid iteration with relaxed gates. See `governance/METHOD-0008-prototype-pathway.md` for full details.
 
 ## 0. Assign Roles and Trust Levels
 
@@ -131,12 +133,100 @@ For every AI-assisted integration:
 - Quarterly reviews revisit evidence recency, cost thresholds, security posture, and method changes; record outcomes as new decisions or spec updates.
 
 ## 7. Companion Assets
+
 - `METHOD-0001` — Core methodology principles.
 - `METHOD-0002` — Phase checklists (with Quick Start pathway selection).
 - `METHOD-0003` — Role handbook.
 - `METHOD-0006` — Agent trust and autonomy framework.
 - `METHOD-0007` — Streamlined operations and human-friendly design.
+- `METHOD-0008` — Prototype pathway for POC/spike work.
 - `rjw-idd-methodology/templates/DEC-template.md` — Full decision boilerplate (High/Critical risk).
 - `rjw-idd-methodology/templates/DEC-LITE-template.md` — Lightweight decision template (Low/Medium risk).
+- `rjw-idd-methodology/templates/PROTO-template.md` — Prototype record template.
+
+## 8. Prototype Mode for AI Agents
+
+When working on prototypes, spikes, or experimental features, AI agents operate under a different set of guidelines that prioritize speed and iteration while maintaining traceability. See `governance/METHOD-0008-prototype-pathway.md` for full details.
+
+### When to Use Prototype Mode
+
+Use prototype mode for:
+
+- **Proof of Concept (POC):** Validating a technical approach
+- **Spike:** Time-boxed investigation to reduce uncertainty
+- **Feasibility Study:** Determining if a capability is achievable
+- **Experimental Features:** Exploring new functionality
+- **Technology Evaluation:** Comparing frameworks or libraries hands-on
+
+### Prototype Workflow Summary
+
+```text
+1. Receive or propose prototype assignment
+2. Draft PROTO-#### record with intent, criteria, time-box
+3. Work iteratively toward success criteria
+   - Tag components as ⟦keep⟧/⟦flex⟧/⟦unknown⟧ as you build
+   - Self-review; iterate quickly
+   - Document surprises and learnings
+4. Assess against success criteria at midpoint
+5. At time-box end or completion:
+   - Evaluate against success criteria
+   - Recommend exit decision with rationale
+   - If promoting: identify DEC-#### pathway and risk level
+6. Update PROTO record with exit decision
+```
+
+### Relaxed Gates in Prototype Mode
+
+| Gate | Standard Mode | Prototype Mode |
+|------|---------------|----------------|
+| Peer Review | Required (Medium+) | Self-review acceptable |
+| Test Coverage | Full coverage | Smoke tests sufficient |
+| Documentation | Full specs/runbooks | Inline comments + PROTO record |
+| Security Review | Required when relevant | Not required unless real user data |
+| DEC Record | Required (Medium+) | PROTO record sufficient |
+
+### Keep/Flex/Unknown Tagging
+
+Use these semantic tags to help distinguish essential code from scaffolding:
+
+| Tag | Meaning | On Promotion |
+|-----|---------|--------------|
+| `⟦keep⟧` or `[KEEP]` | Essential to the proof-of-concept | Preserve and enhance |
+| `⟦flex⟧` or `[FLEX]` | Scaffolding or shortcuts | Replace with production-grade |
+| `⟦unknown⟧` or `[UNKNOWN]` | Uncertain; needs evaluation | Classify during promotion |
+
+**Example in code:**
+
+```python
+# ⟦keep⟧ Core algorithm proving the concept
+def process_data(input):
+    ...
+
+# ⟦flex⟧ Hardcoded config - replace with proper config management
+CONFIG = {"timeout": 30}
+
+# ⟦unknown⟧ Retry logic may or may not be needed in production
+def retry_with_backoff():
+    ...
+```
+
+### Working on Promoted Prototype Code
+
+When encountering code promoted from a prototype (referenced by PROTO-#### in DEC-####):
+
+- **`[KEEP]` code:** Preserve core logic; may enhance for production quality
+- **`[FLEX]` code:** Explicitly marked for replacement; use standard METHOD-0002 approach
+- **`[UNKNOWN]` code:** Stop, evaluate, reclassify as KEEP or FLEX, then proceed
+
+### Trust Level Adjustments
+
+Prototype mode adjusts how trust levels apply:
+
+| Trust Level | Standard Mode | Prototype Mode |
+|-------------|---------------|----------------|
+| Level 0 | All actions require approval | PROTO-scoped actions may batch |
+| Level 1 | Pre-approved categories only | All prototype work pre-approved in scope |
+| Level 2 | Autonomous with post-hoc review | Autonomous; review at exit |
+| Level 3 | Strategic participation | May approve PROTO records and exits |
 
 Run this workflow step-by-step. When artefacts, prompts, or scripts evolve, update the corresponding specs/runbooks so the scaffold remains reusable for the next project.

@@ -3,6 +3,8 @@
 Use these checklists to force the same lifecycle run that originally created RJW-IDD. Every box must be checked before advancing to the next phase. Record completion in `docs/change-log.md` and append the relevant `DEC-####` entry each time you revisit the method.
 
 > **Quick Reference:** For risk-proportionate process selection, see [Quick Start — Select Your Pathway](#quick-start--select-your-pathway) before starting. Not all changes require the full checklist—use the appropriate pathway for your risk level.
+>
+> **Prototype Work?** For proof-of-concept, spike, or experimental work that isn't intended for immediate production, use the **Prototype Pathway** defined in `governance/METHOD-0008-prototype-pathway.md`. This enables rapid iteration with relaxed gates while maintaining traceability.
 
 ## Quick Start — Select Your Pathway
 
@@ -165,4 +167,6 @@ When AI agents execute these checklists, apply trust-level constraints from `ope
 
 - `operations/METHOD-0006-agent-trust-and-autonomy.md` — Agent trust framework
 - `operations/METHOD-0007-streamlined-operations.md` — Full streamlining details
+- `governance/METHOD-0008-prototype-pathway.md` — Prototype pathway for POC/spike work
 - `templates/DEC-LITE-template.md` — Lightweight decision template for Low/Medium risk
+- `templates/PROTO-template.md` — Prototype record template
