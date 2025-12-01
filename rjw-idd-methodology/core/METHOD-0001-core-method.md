@@ -79,7 +79,10 @@ Each gate adds a new decision record, audit tag, and change-log entry so the lif
 
 
 For hands-on execution, pair this overview with:
-- `governance/METHOD-0002-phase-driver-checklists.md` for gate-by-gate tasks.
+- `governance/METHOD-0002-phase-driver-checklists.md` for unified lifecycle and gate-by-gate tasks (Standard, Streamlined, and Prototype pathways).
 - `governance/METHOD-0003-role-handbook.md` to keep ownership clear.
-- `templates/PROJECT-DEC-template.md` when drafting new Tree-of-Thought decisions.
+- `operations/METHOD-0004-ai-agent-workflows.md` for AI agent workflows, trust framework, and behavioral contracts.
+- `operations/METHOD-0005-operations-production-support.md` for post-deployment phases.
+- `templates/decisions/DEC-template.md` when drafting new Tree-of-Thought decisions.
+
 By following the decision-derived structure above, teams can transplant RJW-IDD into any project while keeping the method faithful to the original Tree-of-Thought reasoning that shaped it.

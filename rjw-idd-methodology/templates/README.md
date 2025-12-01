@@ -141,8 +141,7 @@ These extend the base templates with domain-specific sections and acceptance cri
 ## Related Documentation
 
 - Core Method: `core/METHOD-0001-core-method.md`
-- Phase Checklists: `governance/METHOD-0002-phase-driver-checklists.md`
+- Unified Lifecycle & Checklists: `governance/METHOD-0002-phase-driver-checklists.md`
 - Role Handbook: `governance/METHOD-0003-role-handbook.md`
-- AI Agent Workflows: `operations/METHOD-0004-ai-agent-workflows.md`
-- Agent Trust Framework: `operations/METHOD-0006-agent-trust-and-autonomy.md`
-- Prototype Pathway: `governance/METHOD-0008-prototype-pathway.md`
+- Unified Agent Handbook: `operations/METHOD-0004-ai-agent-workflows.md`
+- Operations Support: `operations/METHOD-0005-operations-production-support.md`

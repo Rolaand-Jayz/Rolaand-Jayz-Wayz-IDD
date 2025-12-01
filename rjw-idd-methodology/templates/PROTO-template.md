@@ -1,6 +1,6 @@
 # PROTO-XXXX — [Prototype Title]
 
-> Copy this file into your project (for example `docs/prototypes/`) and rename it to the next available `PROTO-####`. Use this template for all prototype work under METHOD-0008.
+> Copy this file into your project (for example `docs/prototypes/`) and rename it to the next available `PROTO-####`. Use this template for all prototype work under METHOD-0002 Section 6 (Prototype Mode).
 
 **Created:** YYYY-MM-DD
 **Owner:** [Name/Role]
